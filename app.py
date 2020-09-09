@@ -185,12 +185,12 @@ class SendEmail():
     def email(self,tracebac,exception=''):
         email_response = dbQuery.email()
         emailhost = "smtp.126.com"
-        emailuser = "l15921958758zy@126.com"
-        emailpass = "l231488z"
-        sender = 'l15921958758zy@126.com'
+        emailuser = "***@**.com"
+        emailpass = "*****"
+        sender = '***@**.com'
         receivers = email_response
         message = MIMEText(tracebac, 'plain', 'utf-8')
-        message['From'] = 'l15921958758zy@126.com'
+        message['From'] = '***@**.com'
         message['To'] = 'email_response'
 
         message['Subject'] = Header('Product Report', 'utf-8')
